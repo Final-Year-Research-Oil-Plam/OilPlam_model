@@ -30,7 +30,7 @@ ROI_SCALE_DOWN = 0.8
 
 logger = logging.getLogger(__name__)
 
-
+# model/app/infer.py
 def _boxes_to_coords(result):
     """Extract list of {x1, y1, x2, y2} from YOLO result."""
     if result.boxes is None or len(result.boxes) == 0:
